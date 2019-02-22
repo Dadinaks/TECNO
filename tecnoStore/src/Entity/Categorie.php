@@ -28,5 +28,38 @@ class Categorie
      */
     private $categorie;
 
+    /**
+     * Get the value of idcategorie
+     *
+     * @return  int
+     */ 
+    public function getIdcategorie()
+    {
+        return $this->idcategorie;
+    }
+
+    /**
+     * Get the value of categorie
+     *
+     * @return  string
+     */ 
+    public function getCategorie()
+    {
+        return $this->categorie;
+    }
+
+    /**
+     * Set the value of categorie
+     *
+     * @param  string  $categorie
+     *
+     * @return  self
+     */ 
+    public function setCategorie(string $categorie)
+    {
+        $this->categorie = $categorie;
+
+        return $this;
+    }
 
 }

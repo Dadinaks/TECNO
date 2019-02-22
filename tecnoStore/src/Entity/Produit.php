@@ -57,7 +57,7 @@ class Produit
     private $qtestock = '0';
 
     /**
-     * @var \Categorie
+     * @var Categorie
      *
      * @ORM\ManyToOne(targetEntity="Categorie")
      * @ORM\JoinColumns({
@@ -67,7 +67,7 @@ class Produit
     private $idcategorie;
 
     /**
-     * @var \Fournisseur
+     * @var Fournisseur
      *
      * @ORM\ManyToOne(targetEntity="Fournisseur")
      * @ORM\JoinColumns({
@@ -76,78 +76,182 @@ class Produit
      */
     private $idfournisseur;
 
-    public function getIdProduit(): ?int
+
+    /**
+     * Get the value of idproduit
+     *
+     * @return  int
+     */ 
+    public function getIdproduit()
     {
         return $this->idproduit;
     }
 
-    # Getters and Setters du champ Designation
-    public function getDesignation(): ?string
+    /**
+     * Get the value of designation
+     *
+     * @return  string
+     */ 
+    public function getDesignation()
     {
         return $this->designation;
     }
 
-    public function setDesignation(string $designation): self
+    /**
+     * Set the value of designation
+     *
+     * @param  string  $designation
+     *
+     * @return  self
+     */ 
+    public function setDesignation(string $designation)
     {
         $this->designation = $designation;
+
+        return $this;
     }
 
-    # Getters and Setters du champ Image
-    public function getImage(): ?string
+    /**
+     * Get the value of image
+     *
+     * @return  string|null
+     */ 
+    public function getImage()
     {
         return $this->image;
     }
 
-    public function setImage(string $image): self
+    /**
+     * Set the value of image
+     *
+     * @param  string|null  $image
+     *
+     * @return  self
+     */ 
+    public function setImage($image)
     {
         $this->image = $image;
+
+        return $this;
     }
 
-    # Getters and Setters du champ Prix Unitaire
-    public function getPrixUnitaire(): ?int
+    /**
+     * Get the value of prixunitaire
+     *
+     * @return  int
+     */ 
+    public function getPrixunitaire()
     {
         return $this->prixunitaire;
     }
 
-    public function setPrixUnitaire(int $prixunitaire): self
+    /**
+     * Set the value of prixunitaire
+     *
+     * @param  int  $prixunitaire
+     *
+     * @return  self
+     */ 
+    public function setPrixunitaire(int $prixunitaire)
     {
         $this->prixunitaire = $prixunitaire;
+
+        return $this;
     }
 
-    # Getters and Setters du champ Prix de vente
-    public function getPrixVente(): ?int
+    /**
+     * Get the value of prixvente
+     *
+     * @return  int
+     */ 
+    public function getPrixvente()
     {
         return $this->prixvente;
     }
 
-    public function setPrixVente(int $prixvente): self
+    /**
+     * Set the value of prixvente
+     *
+     * @param  int  $prixvente
+     *
+     * @return  self
+     */ 
+    public function setPrixvente(int $prixvente)
     {
         $this->prixvente = $prixvente;
+
+        return $this;
     }
 
-    # Getters and Setters du champ Quantite en stock
-    public function getQteStock(): ?int
+    /**
+     * Get the value of qtestock
+     *
+     * @return  int
+     */ 
+    public function getQtestock()
     {
         return $this->qtestock;
     }
 
-    public function setQteStock(int $qtestock): self
+    /**
+     * Set the value of qtestock
+     *
+     * @param  int  $qtestock
+     *
+     * @return  self
+     */ 
+    public function setQtestock(int $qtestock)
     {
         $this->qtestock = $qtestock;
+
+        return $this;
     }
-    
-    
-    # Getters idCategorie
-    public function getIdCategorie(): ?int
+
+    /**
+     * Get the value of idcategorie
+     *
+     * @return  Categorie
+     */ 
+    public function getIdcategorie()
     {
         return $this->idcategorie;
     }
 
-    # Getters idFournisseur
-    public function getIdFournisseur(): ?int
+    /**
+     * Set the value of idcategorie
+     *
+     * @param  Categorie  $idcategorie
+     *
+     * @return  self
+     */ 
+    public function setIdcategorie(Categorie $idcategorie)
+    {
+        $this->idcategorie = $idcategorie;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of idfournisseur
+     *
+     * @return  Fournisseur
+     */ 
+    public function getIdfournisseur()
     {
         return $this->idfournisseur;
     }
 
+    /**
+     * Set the value of idfournisseur
+     *
+     * @param  Fournisseur  $idfournisseur
+     *
+     * @return  self
+     */ 
+    public function setIdfournisseur(Fournisseur $idfournisseur)
+    {
+        $this->idfournisseur = $idfournisseur;
 
+        return $this;
+    }
 }

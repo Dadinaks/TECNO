@@ -50,4 +50,111 @@ class Fournisseur
     private $adresse;
 
 
+
+    /**
+     * Get the value of idfournisseur
+     *
+     * @return  int
+     */ 
+    public function getIdfournisseur()
+    {
+        return $this->idfournisseur;
+    }
+
+    /**
+     * Get the value of nom
+     *
+     * @return  string
+     */ 
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * Set the value of nom
+     *
+     * @param  string  $nom
+     *
+     * @return  self
+     */ 
+    public function setNom(string $nom)
+    {
+        $this->nom = $nom;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of telephone
+     *
+     * @return  string
+     */ 
+    public function getTelephone()
+    {
+        return $this->telephone;
+    }
+
+    /**
+     * Set the value of telephone
+     *
+     * @param  string  $telephone
+     *
+     * @return  self
+     */ 
+    public function setTelephone(string $telephone)
+    {
+        $this->telephone = $telephone;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of email
+     *
+     * @return  string|null
+     */ 
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    /**
+     * Set the value of email
+     *
+     * @param  string|null  $email
+     *
+     * @return  self
+     */ 
+    public function setEmail($email)
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of adresse
+     *
+     * @return  string
+     */ 
+    public function getAdresse()
+    {
+        return $this->adresse;
+    }
+
+    /**
+     * Set the value of adresse
+     *
+     * @param  string  $adresse
+     *
+     * @return  self
+     */ 
+    public function setAdresse(string $adresse)
+    {
+        $this->adresse = $adresse;
+
+        return $this;
+    }
+
 }
